@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <style>
+            #newp, my{
+                padding:5px;
+                text-align:center;
+                border: solid 1px;
+            }
+
+            #my{
+                display: none;
+            }
+            </style>
+            <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                // $("p").hide("slow", function(){
+                    // alert(" Now Hidden ");
+                // })
+                $("p").hide(1000);
+                alert("Now Hidden");
+            });
+        
+        $("#show").click(function(){
+            $("p").show();
+            $("P").fadeIn();
+        });
+
+        $("#newp").click(function(){
+            $("#my").slideDown("slow");
+
+        });
+        $("#newp").click(function(){
+            $("#my").slideUp("slow");
+        });
+
+        $("p").hover(function(){
+            $(this).css("background-color", "yellow");
+        }, function(){
+            $(this).css("background-color","pink");
+        });
+        // $("#start1").click(function(){
+        //     $("p").animate({left:'250px'});
+        // });
+        
+        });
+
+
+    
+    </script>
+</head>
+<body>
+    <p>if you click on the "hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <div id="newp">Slide Down</div>
+    <div id="my">huhahahahahah!!!!</div>
+    
+</body>
+</html>

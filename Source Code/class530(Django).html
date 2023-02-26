@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+    te{
+      color:white;
+    }
+
+  </style>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg bg-danger">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><te>Navbar</te></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><te>Home</te></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><te>Link</te></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <te>Dropdown</te></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled"><te>Disabled</te></a>
+                          </li>
+                        </ul>
+
+                        <!-- login modal -->
+                        <!-- Button trigger modal -->
+                  
+<button style = "margin-right: 10px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- login form -->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!-- login form close -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                        <!-- login modal end -->
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <!-- category -->
+                <ul class="list-group">
+                    <li class="list-group-item">Electronics</li>
+                    <li class="list-group-item">Men's Fashion</li>
+                    <li class="list-group-item">Women's Fashion</li>
+                    <li class="list-group-item">Food</li>
+                    <li class="list-group-item">Automobiles</li>
+                    <li class="list-group-item">Home Products</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <!-- slider -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://icms-image.slatic.net/images/ims-web/f640e57a-beb2-4ff1-81e2-eee750d4e88c.jpg_1200x1200.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://icms-image.slatic.net/images/ims-web/581e53cb-9d00-440b-8768-5a78df4f8f56.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://icms-image.slatic.net/images/ims-web/f5381acd-080e-4e85-94c1-982b6582ba24.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <div class="row"style = "padding-top:10px;">
+            <div class="col-md-2">
+                <!-- product -->
+                <div class="card" style="width: 12rem;">
+                    <img src="https://static-01.daraz.com.np/p/bd33efdf4e6f2fc6d768c9fe66ae8ab2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Hair color</h5>
+                      <p class="card-text">Rs. 2000</p>
+                      <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <!-- product -->
+                <div class="card" style="width: 11rem;">
+                    <img src="https://static-01.daraz.com.np/p/fd790cea486382d8ff7994eb28113199.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Philips Buds</h5>
+                      <p class="card-text">Rs.1100</p>
+                      <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <!-- product -->
+                <div class="card" style="width: 11rem;">
+                    <img src="https://static-01.daraz.com.np/p/9fea8f9b56d73f431547c58d8155d3d7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">American Tourister</h5>
+                      <p class="card-text">Rs.5000</p>
+                      <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+                                <div class="card" style="width: 10.5rem;">
+                                  <img src="https://static-01.daraz.com.np/p/9fea8f9b56d73f431547c58d8155d3d7.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">American Tourister</h5>
+                                    <p class="card-text">Rs.5000</p>
+                                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                                  </div>
+                                </div>
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+                                <div class="card" style="width: 10.5rem;">
+                                  <img src="https://static-01.daraz.com.np/p/9fea8f9b56d73f431547c58d8155d3d7.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">American Tourister</h5>
+                                    <p class="card-text">Rs.5000</p>
+                                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                                  </div>
+                                </div>
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+                                <div class="card" style="width: 10.5rem;">
+                                  <img src="https://static-01.daraz.com.np/p/9fea8f9b56d73f431547c58d8155d3d7.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">American Tourister</h5>
+                                    <p class="card-text">Rs.5000</p>
+                                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                                  </div>
+                                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                                <!-- product -->
+                                <div class="card" style="width: 10.5rem;">
+                                  <img src="https://static-01.daraz.com.np/p/9fea8f9b56d73f431547c58d8155d3d7.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">American Tourister</h5>
+                                    <p class="card-text">Rs.5000</p>
+                                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                                  </div>
+                                </div>
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+                                <div class="card" style="width: 10.5rem;">
+                                  <img src="https://static-01.daraz.com.np/p/9fea8f9b56d73f431547c58d8155d3d7.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">American Tourister</h5>
+                                    <p class="card-text">Rs.5000</p>
+                                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                                  </div>
+                                </div>
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+            </div>
+            <div class="col-md-2">
+                                <!-- product -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- footer1 -->
+            </div>
+            <div class="col-md-3">
+                <!-- footer2 -->
+            </div>
+            <div class="col-md-6">
+                <!-- footer3 -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

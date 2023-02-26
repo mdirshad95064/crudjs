@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="cal()">Calculator</button>
+   <script language="javascript" type="text/javascript">
+
+    function cal(){
+        let o = prompt("Enter +, _, /, *");
+        let a = parseInt(prompt("Enter a num1 = "));
+        let b = parseInt(prompt("Enter a num2 = "));
+    
+        if(o == '+'){
+            let sum = a + b;
+            document.write(sum);
+        }
+        else if(o == '-'){
+            let sub = a -b;
+            document.write(sub);
+        }
+        else if(o == '*'){
+            let mul = a *b;
+            document.write(mul);
+        }
+        else if(o == '/'){
+            let div = a /b;
+            document.write(div);
+        }
+        else {
+            document.write("Invalid Input! Try Again ");
+        }
+
+    }
+
+   </script>
+    
+</body>
+</html>
